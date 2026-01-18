@@ -15,7 +15,10 @@
 body{
     background-color:rgba(26, 11, 46, 1) ;
     color: white;
+
 }
+
+
 
 .btn{
     width: 135px;
@@ -34,13 +37,19 @@ body{
     transform: scale(1.5);
 }
 
+.description{
+     color: #ece9e9de;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 /*Navbar Design*/
 
 
 
     nav{
-        border: 1px solid red;
+       
          max-width: 1240px;
          display: flex;
           margin: 0 auto;
@@ -61,7 +70,7 @@ body{
 
     #menu-item{
          gap: 35px;
-         border: 1px solid red;
+         
          font-size: 16px;
          font-weight: 400;
          color: #ece9e9f3;
@@ -89,6 +98,109 @@ body{
 }
 
 
+   
+   hr {
+   height: 1px;
+    border: none;
+    background: rgba(189, 120, 246, 0.307);
+}
+
+
+/*Banner Section*/
+
+.banner{
+
+    background-image: url('assets/hero-bg.png');
+    height: 760px;
+    width: 100%;
+   
+     display: flex;
+     flex-direction: column;
+     
+    justify-content: center;
+     align-items: center;
+     text-align: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hero-image-container{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.microphone-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.badge-new{
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    background-color: #00FF88;
+    color: #1A0B2E;      
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 10;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.badge-new:hover{
+    transform: scale(1.5);
+}
+
+
+   .banner-title{
+    width: 550px;
+    height: 73px;
+    font-size:3.75rem;
+    font-weight:Extra Bold;
+    text-align: center;
+   text-transform: capitalize;
+   
+}
+
+#spotify{
+    color: var(--#FFFFFF, rgba(255, 255, 255, 1));
+    margin-top: 25px;
+    width: 201px;
+   height: 44px;
+   font-size:1rem ;
+   font-weight: 500;
+}
+
+#subscribe{
+    color:#00FF88;
+     width: 135px;
+    height: 44px;
+    padding: 12px 16px 12px 16px;
+    align-items: center;
+    background: transparent;
+    
+    border-radius: 100px;
+     cursor: pointer;
+    transition: transform 0.2s;
+    border:1px solid #00FF88;
+   
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  
+}
+
+#subscribe:hover{
+    transform: scale(1.5);
+}
+
+
 
 
 
@@ -103,11 +215,12 @@ body{
 
 @media screen and (max-width:576px){
     nav{
-        padding: 0 20px;
+       width: 100%;
+        padding: 0 16px;
         
     }
       nav>span{
-    margin-right: 5px;
+   /* margin-right: 5px;*/
     display: inline ;
 }
 #menu-item{
@@ -116,5 +229,106 @@ body{
 .primary-button {
     display: none;
 }
+
+
+
+
+  .banner{
+  
+     width: 100%;
+    
+    height: auto;
+    
+  padding: 40px 16px 64px;
+    background-position: center;
+     
+    
+    border: 1px solid red;
+    background-position: top center;
+
+    background-size: 100% 500px;   
+    background-repeat: no-repeat;
+  
+   
+  }
+
+  .hero-image-container{
+    width: 100%;
+     position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    
+  }
+
+    .circle{
+    width: 220px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .microphone-img{
+    width: 120px;
+  }
+
+  .banner-title{
+    width: auto;
+    max-width: 320px;
+    
+    font-size:2rem;
+    margin-top: 16px;
+    
 }
+
+.description{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 320px;
+    margin-top: 8px;
+  }
+
+ 
+   .badge-new{
+    top: 6px;
+    right: 50%;
+    left: auto;
+    /*transform: translateX(110px);*/
+    transform:translateX(110px); 
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .banner-button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    
+  }
+
+  #spotify,
+  #subscribe{
+    width: auto;
+    min-width: 140px;
+    max-width: none;
+    margin: 0;
+  }
+  .btn:hover,
+  #subscribe:hover,
+  .badge-new:hover{
+    transform: none;
+  }
+
+   .badge-new:hover{
+    transform: none !important;
+  }
+}
+
+
+
+ 
+  
+  
+
 
