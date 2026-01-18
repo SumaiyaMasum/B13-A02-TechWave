@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color:rgba(26, 11, 46, 1) ;
+    color: white;
+}
+
+.btn{
+    width: 135px;
+    height: 44px;
+    padding: 12px 16px 12px 16px;
+    align-items: center;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    color: white;
+    border: none;
+    border-radius: 100px;
+     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover{
+    transform: scale(1.5);
+}
+
+
+/*Navbar Design*/
+
+
+
+    nav{
+        border: 1px solid red;
+         max-width: 1240px;
+         display: flex;
+          margin: 0 auto;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          height: 92px;
+    }
+
+    nav>span{
+    margin-right: 5px;
+    display: none;
+}
+
+    .display-flex{
+        display: flex;
+    }
+
+    #menu-item{
+         gap: 35px;
+         border: 1px solid red;
+         font-size: 16px;
+         font-weight: 400;
+         color: #ece9e9f3;
+          
+    }
+
+     
+
+    .gradient{
+  
+  background: -webkit-linear-gradient(rgba(145, 0, 248, 1),rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.items{
+    font-size: 16px;
+    font-weight: 500;
+}
+.primary-button{
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive code */
+
+@media screen and (max-width:576px){
+    nav{
+        padding: 0 20px;
+        
+    }
+      nav>span{
+    margin-right: 5px;
+    display: inline ;
+}
+#menu-item{
+    display: none;
+}
+.primary-button {
+    display: none;
+}
+}
+
