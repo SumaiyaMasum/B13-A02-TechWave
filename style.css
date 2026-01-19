@@ -266,6 +266,7 @@ margin-top: 20px;
 
 main{
     background: rgba(35, 14, 61, 1);
+    padding-bottom: 30px;
 
 }
 
@@ -289,7 +290,8 @@ main{
     grid-template-rows: repeat(3, 1fr);
 
     gap: 16px;
-
+   
+    
     
 
 
@@ -377,6 +379,99 @@ height: 225px;
    
   
 }
+
+/*Featured section*/
+
+.featured-title{
+
+      font-size:3rem;
+      font-weight: 700;
+      text-align: center;
+      color: #FFFFFF;
+    
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+
+.featured-container{
+
+     display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+   justify-items: center;
+   align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1240px;
+  padding-bottom: 30px;
+
+}
+
+
+.featured-card{
+
+    width: 380px;
+     height: 440px;
+      background: rgba(53, 17, 101, 0.4);
+
+      border: 1px solid rgba(35, 14, 61, 1) ;
+
+    border-radius: 45px;
+     
+     
+    
+   display: flex;
+   flex-direction: column;   
+    justify-content: center; 
+    align-items: flex-start;      
+    text-align: left;
+}
+
+.video{
+
+    margin-top: -28px;
+        
+    
+}
+.video-3{
+
+    margin-top: -40px;
+        
+    
+}
+
+
+
+
+
+.featured-description {
+    padding-left: 25px;
+}
+
+.featured-description h4{
+
+    font-size: 1.5rem;
+   font-weight: 700;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.featured-time{
+
+    margin-top: 15px;
+    color: #00FF88;
+}
+
+.featured-time-3{
+
+    margin-top: 25px;
+     color: #00FF88;
+   
+}
+
+
+
+
 
 
 
@@ -563,7 +658,7 @@ font-size: 2.5rem;
 
 /*takewave-section*/
 
-.takewave-container{
+.takewave-container , .featured-container{
   
     grid-template-columns: 1fr;
      width: 100%;
@@ -572,13 +667,15 @@ font-size: 2.5rem;
      padding: 0 16px;
      margin: 30px auto;
      height: auto;
+     
+     
 
 }
 
 
 .takewave-card-1 , .takewave-card-2,
 .takewave-card-3,.takewave-card-4,
-.takewave-card-5{
+.takewave-card-5 {
      
 
 
@@ -605,6 +702,51 @@ font-size: 2.5rem;
     
     
 }
+
+.featured-card{
+        width: 100%;
+        height: auto;
+          border-radius: 32px;
+
+     
+    }
+
+
+    .featured-card iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+}
+
+.video,
+  .video-3{
+    margin-top: 0;
+  }
+
+  .featured-description{
+    padding: 16px;
+  }
+
+  .featured-description h4{
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .featured-time,
+  .featured-time-3{
+    margin-top: 12px;
+
+
+  }
+
+   .featured-title{
+    font-size: 2.5rem;
+    padding-top: 50px;
+    padding-bottom: 8px;
+  }
+
+   
 
 
 
